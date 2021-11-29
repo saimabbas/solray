@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
 import Logo from "./assets/logo.png";
+import Icon1 from "./assets/icon-1.png";
+import Icon2 from "./assets/icon-2.png";
+import Icon3 from "./assets/icon-3.png";
+import Icon4 from "./assets/icon-4.png";
+import Icon5 from "./assets/icon-5.png";
+import Nft from "./assets/nft.jpg";
 import Brandmark from "./assets/brandmark.png";
 import "./App.css";
 import $ from "jquery";
@@ -75,7 +81,6 @@ const App = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section2",
-        offsetY: 50,
       },
       ease: Power4.easeInOut,
     });
@@ -84,7 +89,6 @@ const App = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section3",
-        offsetY: 60,
       },
       ease: Power4.easeInOut,
     });
@@ -93,7 +97,6 @@ const App = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section4",
-        offsetY: 60,
       },
       ease: Power4.easeInOut,
     });
@@ -102,7 +105,6 @@ const App = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section5",
-        offsetY: 60,
       },
       ease: Power4.easeInOut,
     });
@@ -111,7 +113,6 @@ const App = () => {
     gsap.to(window, {
       scrollTo: {
         y: "#section6",
-        offsetY: 0,
       },
       ease: Power4.easeInOut,
     });
@@ -327,36 +328,53 @@ const App = () => {
             <div className="exchangeplatform-grid">
               <div className="epg-content epg-content-grid">
                 <div className="icon-epg">
-                  <MdSwapHoriz />
+                  <img src={Icon1} alt="Icon" />
                 </div>
-                <h6 className="grd-text">Peer-to-Peer Transaction</h6>
+                <h6 className="grd-text">Research</h6>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
                   labore adipisci facilis, nobis laudantium ab est deleniti.
                 </p>
-                <button className="grd-btn">12M Wallets</button>
               </div>
               <div className="epg-content epg-content-grid">
                 <div className="icon-epg">
-                  <MdLanguage />
+                  <img src={Icon3} alt="Icon" />
                 </div>
-                <h6 className="grd-text">Borderless Payment</h6>
+                <h6 className="grd-text">Development</h6>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
                   labore adipisci facilis, nobis laudantium ab est deleniti.
                 </p>
-                <button className="grd-btn">1 BCH=909.64 USD</button>
               </div>
               <div className="epg-content epg-content-grid">
                 <div className="icon-epg">
-                  <MdLock />
+                  <img src={Icon2} alt="Icon" />
                 </div>
-                <h6 className="grd-text">Fraud Protection</h6>
+                <h6 className="grd-text">Deployment</h6>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
                   labore adipisci facilis, nobis laudantium ab est deleniti.
                 </p>
-                <button className="grd-btn">55M Transaction</button>
+              </div>
+              <div className="epg-content epg-content-grid">
+                <div className="icon-epg">
+                  <img src={Icon5} alt="Icon" />
+                </div>
+                <h6 className="grd-text">Strategy & Roadmap</h6>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  labore adipisci facilis, nobis laudantium ab est deleniti.
+                </p>
+              </div>
+              <div className="epg-content epg-content-grid">
+                <div className="icon-epg">
+                  <img src={Icon4} alt="Icon" />
+                </div>
+                <h6 className="grd-text">Marketing</h6>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                  labore adipisci facilis, nobis laudantium ab est deleniti.
+                </p>
               </div>
             </div>
           </div>
@@ -429,90 +447,8 @@ const App = () => {
             </div>
           </div>
         </div>
-        {/* Icon Details Section */}
-        <div className="icondetails" id="section4">
-          <div className="box">
-            <div className="icondetails-content">
-              <div className="id-main-box">
-                <div className="icon-outer">
-                  <MdPrivacyTip />
-                </div>
-                <h6 className="grd-text">Safety Stability</h6>
-              </div>
-              <div className="id-main-box">
-                <div className="icon-outer">
-                  <MdQueryBuilder />
-                </div>
-                <h6 className="grd-text">High Performance</h6>
-              </div>
-              <div className="id-main-box">
-                <div className="icon-outer">
-                  <MdPrivacyTip />
-                </div>
-                <h6 className="grd-text">High Liquidity</h6>
-              </div>
-              <div className="id-main-box">
-                <div className="icon-outer">
-                  <MdImportantDevices />
-                </div>
-                <h6 className="grd-text">All Devices Covered</h6>
-              </div>
-              <div className="id-main-box">
-                <div className="icon-outer">
-                  <MdLanguage />
-                </div>
-                <h6 className="grd-text">Multiple-Language Support</h6>
-              </div>
-              <div className="id-main-box">
-                <div className="icon-outer">
-                  <FaDatabase />
-                </div>
-                <h6 className="grd-text">Multiple-Coin Support</h6>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      {/* Account Buy Section */}
-      <div className="accountbuy section">
-        <div className="box">
-          <div className="accountbuy-content">
-            <div className="exchangeplatform-grid">
-              <div className="epg-content">
-                <div className="icon-outer-epg">
-                  <MdEditCalendar />
-                </div>
-                <h6>Register Account</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  labore adipisci facilis, nobis laudantium ab est deleniti.
-                </p>
-              </div>
-              <div className="epg-content">
-                <div className="icon-outer-epg">
-                  <FaDatabase />
-                </div>
-                <h6>Deposit Amount</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  labore adipisci facilis, nobis laudantium ab est deleniti.
-                </p>
-              </div>
-              <div className="epg-content">
-                <div className="icon-outer-epg">
-                  <MdShoppingCart />
-                </div>
-                <h6>Buy Crypto</h6>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                  labore adipisci facilis, nobis laudantium ab est deleniti.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Road Map Section */}
       <div className="roadmap section" id="section5">
@@ -585,6 +521,59 @@ const App = () => {
               <span className="roadmap-next">
                 <MdKeyboardArrowRight />
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Pre Icon Detail Section */}
+      <div className="pre-icon-detail-sections">
+        {/* Pre-Sale Info Section */}
+        <div className="presale section" id="section3">
+          <div className="box">
+            <div className="presale-content">
+              <h6 className="section-heading grd-text">ICO Pre-sale & Info</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum a
+                voluptatibus tempore ducimus nemo optio nam ratione, quia omnis
+                laudantium quam ipsam nisi neque illum?
+              </p>
+              <div className="presale-boxes-inverted">
+                <div className="presale-right">
+                  <div className="presale-right-content">
+                    <h6 className="grd-text">
+                      ICO Tokenz has distributed May BTC
+                    </h6>
+                    <h5>25 May 2018</h5>
+                    <p>
+                      Lorem ipsum dolor sit elit. Accusamus cum natus quibusdam,
+                      commodi delectus atque porro odio impedit. Inventore
+                      nesciunt totam vitae asperiores nulla perspiciatis?
+                    </p>
+                  </div>
+                  <div className="presale-right-content">
+                    <h6 className="grd-text">
+                      ETH Competetion - 7 Million Giveaway
+                    </h6>
+                    <h5>24 May 2018</h5>
+                    <p>
+                      Lorem ipsum dolor sit elit. Accusamus cum natus quibusdam,
+                      commodi delectus atque porro odio impedit. Inventore
+                      nesciunt totam vitae asperiores nulla perspiciatis?
+                    </p>
+                  </div>
+                  <div className="presale-right-content">
+                    <h6 className="grd-text">ICO Tokenz Listed Ripple</h6>
+                    <h5>23 May 2018</h5>
+                    <p>
+                      Lorem ipsum dolor sit elit. Accusamus cum natus quibusdam,
+                      commodi delectus atque porro odio impedit. Inventore
+                      nesciunt totam vitae asperiores nulla perspiciatis?
+                    </p>
+                  </div>
+                </div>
+                <img src={Nft} alt="" />
+              </div>
             </div>
           </div>
         </div>
