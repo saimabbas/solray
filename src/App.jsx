@@ -268,11 +268,11 @@ const App = () => {
       {/* Header */}
       <div className="header">
         <div className="mob-header">
-          <a onClick={moveTo1Mob}>HOME</a>
-          <a onClick={moveTo2Mob}>PLATFORM</a>
-          <a onClick={moveTo3Mob}>ICO</a>
-          <a onClick={moveTo4Mob}>ABOUT</a>
-          <a onClick={moveTo5Mob}>ROAD MAP</a>
+          <a onClick={moveTo1Mob}>Home</a>
+          <a onClick={moveTo2Mob}>Our Service</a>
+          <a onClick={moveTo3Mob}>ICO Platform</a>
+          <a onClick={moveTo5Mob}>Roadmap</a>
+          <a onClick={moveTo4Mob}>NFT</a>
           <a onClick={moveTo6Mob}>FAQ</a>
         </div>
         <div className="box">
@@ -283,11 +283,11 @@ const App = () => {
               <MdClose className="mob-header-close" />
             </div>
             <div className="header-right">
-              <a onClick={moveTo1}>HOME</a>
-              <a onClick={moveTo2}>PLATFORM</a>
-              <a onClick={moveTo3}>ICO</a>
-              <a onClick={moveTo4}>ABOUT</a>
-              <a onClick={moveTo5}>ROAD MAP</a>
+              <a onClick={moveTo1}>Home</a>
+              <a onClick={moveTo2}>Our Service</a>
+              <a onClick={moveTo3}>ICO Platform</a>
+              <a onClick={moveTo5}>Roadmap</a>
+              <a onClick={moveTo4}>NFT</a>
               <a onClick={moveTo6}>FAQ</a>
             </div>
           </div>
@@ -527,9 +527,9 @@ const App = () => {
       </div>
 
       {/* Pre Icon Detail Section */}
-      <div className="pre-icon-detail-sections">
+      <div className="pre-icon-detail-sections" id='section4'>
         {/* Pre-Sale Info Section */}
-        <div className="presale section" id="section3">
+        <div className="presale section">
           <div className="box">
             <div className="presale-content">
               <h6 className="section-heading grd-text">ICO Pre-sale & Info</h6>
