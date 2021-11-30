@@ -384,7 +384,7 @@ const App = () => {
       {/* Pre Icon Detail Section */}
       <div className="pre-icon-detail-sections">
         {/* Pre-Sale Info Section */}
-        <div className="presale section" id="section3">
+        <div className="presale presale-special section" id="section3">
           <div className="box">
             <div className="presale-content">
               <h6 className="section-heading grd-text">ICO Pre-sale & Info</h6>
